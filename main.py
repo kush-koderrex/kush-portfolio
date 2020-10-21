@@ -8,8 +8,28 @@ def hello():
 
 
 @app.route("/kush")
-def harry():
+def kush():
     return "kush resume"
+
+
+@app.route("/competitiveProgramming")
+def prog():
+    return render_template("competitiveProgramming.html")
+
+
+@app.route("/softwareDev")
+def soft():
+    return render_template("softwareDev.html")
+
+
+@app.route("/webDev")
+def web():
+    return render_template("webDev.html")
+
+
+@app.route("/androidDev")
+def android():
+    return render_template("androidDev.html")
 
 
 app.run(debug=True)
